@@ -7,10 +7,38 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  color: #fff;
+}
+
 h3 {
   font-weight: 600;
 }
 
+.banner-img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  overflow: hidden;
+}
+
 .card-text {
   background-color: #fff;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .card-text {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+@media only screen and (min-width: 60em) {
+}
+
+@media only screen and (min-width: 90em) {
 }
