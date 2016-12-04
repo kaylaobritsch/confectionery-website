@@ -1,8 +1,13 @@
 html {
+  background-color: #6e4035;
   font-family: "Open Sans", sans-serif;
 }
 
-.nav a {
+header nav {
+  background-color: #fff;
+}
+
+header nav a {
   color: #f51d4e;
   display: block;
   padding-top: 1rem;
@@ -12,24 +17,69 @@ html {
   margin: auto;
 }
 
-.nav a:hover {
+header nav a:hover {
   background-color: #f51d4e;
   color: #fff;
 }
 
 h1 {
+  color: #6e4035;
+  background-color: #fff;
   font-family: "Gloria Hallelujah", cursive;
+  padding-top: 1.5rem;
 }
 
 h2 {
   color: #f51d4e;
   font-family: "Gloria Hallelujah", cursive;
-  padding-top: 4rem;
   text-align: center;
+  bottom: 0;
+  padding: 1rem;
 }
 
 h3 {
   font-weight: 600;
+}
+
+h4 {
+  font-family: "Gloria Hallelujah", cursive;
+  text-align: center;
+}
+
+.btn {
+  border-color: #f51d4e;
+  background-color: #f51d4e;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, .5);
+  border-color: #f51d4e;
+  color: #f51d4e;
+}
+
+main nav a {
+  color: #6e4035;
+}
+
+main li {
+  background-color: #fff;
+}
+
+main nav a:hover {
+  color: #f51d4e;
+}
+
+.store-item {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.store-text {
+  text-align: center;
 }
 
 
@@ -44,36 +94,64 @@ h3 {
 }
 */
 
-#main li {
-  background-color: #fff;
-}
-
 @media only screen and (min-width: 25em) {
 }
 
 @media only screen and (min-width: 38em) {
-  h1 {
-    position: absolute;
-    z-index: 1;
+
+  main nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
-  header nav {
-    padding-top: 4rem;
-    position: absolute;
-    z-index: 1;
+  main nav li {
+    background-color: transparent;
+    padding-left: .5rem;
+    padding-right: .5rem;
   }
 
-}
-
-@media only screen and (min-width: 60em) {
   .card-text {
     background: #fff;
     padding-bottom: 2rem;
     position: absolute;
-    bottom: -20px;
+    bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .story-img {
+    padding-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  header nav {
+    background-color: transparent;
+    padding-top: 1rem;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+  }
+
+  h1 {
+    background-color: transparent;
+    padding-top: 1.6rem;
+    position: absolute;
+    z-index: 1;
+  }
+
+  h2 {
+    padding-left: 0;
+    left: 2rem;
+    text-align: left;
+  }
+
+  .btn {
+    left: 2rem;
+    transform: translateX(0);
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
