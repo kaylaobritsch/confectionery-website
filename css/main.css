@@ -42,8 +42,8 @@ h3 {
 }
 
 h4 {
+  color: #f51d4e;
   font-family: "Gloria Hallelujah", cursive;
-  text-align: center;
 }
 
 .btn {
@@ -72,16 +72,18 @@ main nav a:hover {
   color: #f51d4e;
 }
 
-.store-item {
-  display: block;
-  margin: 0 auto;
-  width: 50%;
+#story,
+#shop {
+  background-color: #fff;
 }
 
-.store-text {
-  text-align: center;
+.shop-text {
+  padding-left: .5rem;
 }
 
+dl {
+  color: #6e4035;
+}
 
 /* Might need this?
 .banner-img {
@@ -98,6 +100,10 @@ main nav a:hover {
 }
 
 @media only screen and (min-width: 38em) {
+
+  main ul {
+    padding-bottom: 2rem;
+  }
 
   main nav {
     padding-left: 1rem;
@@ -119,9 +125,8 @@ main nav a:hover {
     transform: translateX(-50%);
   }
 
-  .story-img {
-    padding-top: 2rem;
-  }
+  .shop-text {
+    padding-left: 0;
 }
 
 @media only screen and (min-width: 60em) {
