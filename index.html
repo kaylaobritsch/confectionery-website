@@ -25,7 +25,8 @@
     </nav>
     <div class="push embed embed-24by10">
       <img class="banner-img embed-item" src="images/banner.jpg" alt="">
-      <h2 class="exa unit absolute push-2 max-length">Holiday Bark</h2>
+      <h2 class="peta unit absolute push-2 max-length">Noël Chocolates</h2>
+      <p class="unit absolute push-2 holiday max-length">These chocolates don't care if you've been naughty or nice. But it's always nice to share.</p>
       <a class="unit absolute btn push-1-2" href="#shop">Shop Now</a>
     </div>
   </header>
@@ -87,10 +88,10 @@
     </div>
   </section>
 
-  <section class="grid xs-1 s-1 push" id="shop">
+  <section class="grid xs-1 s-1 push gutter-1-2" id="shop">
     <h4 class="tera unit xs-1 s-1 m-1 l-1 gutter-1-2 pad-t-1-2 pad-b-1-2 push-0">Favorites</h4>
     <div class="unit xs-1 s-1 m-1-4">
-      <div class="unit xs-1-2 s-1-2 m-1 store-item push-1-2">
+      <div class="unit xs-1-2 s-1-2 m-1 shop-item push-1-2">
         <img class="img-flex" src="images/story-section.jpg" alt="">
       </div>
       <div class="unit xs-1-2 s-1-2 m-1 shop-text">
@@ -103,7 +104,7 @@
       </div>
     </div>
     <div class="unit xs-1 s-1 m-1-4">
-      <div class="unit xs-1-2 s-1-2 m-1 store-item push-1-2">
+      <div class="unit xs-1-2 s-1-2 m-1 shop-item push-1-2">
         <img class="img-flex" src="images/story-section.jpg" alt="">
       </div>
       <div class="unit xs-1-2 s-1-2 m-1 shop-text">
@@ -116,7 +117,7 @@
       </div>
     </div>
     <div class="unit xs-1 s-1 m-1-4">
-      <div class="unit xs-1-2 s-1-2 m-1 store-item push-1-2">
+      <div class="unit xs-1-2 s-1-2 m-1 shop-item push-1-2">
         <img class="img-flex" src="images/story-section.jpg" alt="">
       </div>
       <div class="unit xs-1-2 s-1-2 m-1 shop-text">
@@ -129,7 +130,7 @@
       </div>
     </div>
     <div class="unit xs-1 s-1 m-1-4">
-      <div class="unit xs-1-2 s-1-2 m-1 store-item push-1-2">
+      <div class="unit xs-1-2 s-1-2 m-1 shop-item push-1-2">
         <img class="img-flex" src="images/story-section.jpg" alt="">
       </div>
       <div class="unit xs-1-2 s-1-2 m-1 shop-text">
@@ -153,5 +154,45 @@
       <p>Chocolate bear claw ice cream. Toffee chocolate jelly soufflé lemon drops marzipan jelly-o toffee. Icing danish marshmallow jelly-o gummi bears tart gingerbread bonbon chocolate cake.</p>
     </div>
   </section>
+
+  <section class="grid push" id="order">
+    <form class="push-0 gutter-1-2" method="POST" action="https://formspree.io/obritschk@gmail.com">
+      <fieldset>
+      <legend class="tera unit xs-1 s-1 m-1 l-1 pad-t-1-2 pad-b-1-2 push-0 max-length">Place an Order</legend>
+      <div class="grid">
+        <div class="push unit xs-1 s-1 m-1 l-1-2 name">
+          <label for="name">Name</label>
+          <input id="name" name="name">
+        </div>
+        <div class="push unit xs-1 s-1 m-1 l-1-2 email">
+          <label for="email">Email</label>
+          <input id="email" name="email">
+        </div>
+        <div>
+          <input type="hidden" name="_subject" value="Order placed">
+        </div>
+        <div class="push unit xs-1 s-1 m-1 l-1-2 favorite">
+          <label for="fitness">Favorite Chocolates</label>
+          <select id="fitness" name="fitness">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+          </select>
+        </div>
+        <div class="push unit xs-1 s-1 m-1 l-1-2 quanitity">
+          <label for="fitness">Quantity</label>
+          <select id="fitness" name="fitness">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+          </select>
+        </div>
+        <div class="unit xs-1 text-center">
+          <button class="push-1-2 btn" type="submit">Place your Order</button>
+        </div>
+    </fieldset>
+  </form>
 </body>
 </html>

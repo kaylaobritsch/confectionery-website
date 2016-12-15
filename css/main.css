@@ -9,17 +9,17 @@ header nav {
 
 header nav a {
   color: #f51d4e;
+  border-bottom: 6px solid transparent;
   display: block;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   text-decoration: none;
   width: 5rem;
   margin: auto;
 }
 
 header nav a:hover {
-  background-color: #f51d4e;
-  color: #fff;
+  border-bottom: 6px solid #f51d4e;
 }
 
 h1 {
@@ -27,11 +27,12 @@ h1 {
   background-color: #fff;
   font-family: "Gloria Hallelujah", cursive;
   padding-top: 1.5rem;
+  padding-bottom: .5rem;
   text-align: center;
 }
 
 h2 {
-  color: #f51d4e;
+  color: #fff;
   font-family: "Gloria Hallelujah", cursive;
   text-align: center;
   bottom: 0;
@@ -42,9 +43,14 @@ h3 {
   font-weight: 600;
 }
 
-h4 {
+h4,
+legend {
   color: #f51d4e;
   font-family: "Gloria Hallelujah", cursive;
+}
+
+.holiday {
+  visibility: hidden;
 }
 
 .btn {
@@ -75,7 +81,8 @@ main nav a:hover {
 
 #story,
 #shop,
-#blog {
+#blog,
+#order {
   background-color: #fff;
 }
 
@@ -85,6 +92,10 @@ main nav a:hover {
 
 dl {
   color: #6e4035;
+}
+
+fieldset {
+  border: none;
 }
 
 /* Might need this?
@@ -107,11 +118,6 @@ dl {
     padding-bottom: 2rem;
   }
 
-  main nav {
-    padding-left: .25rem;
-    padding-right: .25rem;
-  }
-
   main nav li {
     background-color: transparent;
     padding-left: .25rem;
@@ -127,11 +133,8 @@ dl {
     transform: translateX(-50%);
   }
 
-  .shop-text {
-    padding-left: 0;
-}
-
-  .store-item {
+  .shop-text,
+  .shop-item {
     padding-left: .5rem;
     padding-right: .5rem;
   }
@@ -144,17 +147,11 @@ dl {
 @media only screen and (min-width: 60em) {
 
   header nav {
-    background-color: transparent;
     padding-top: 1rem;
-    position: absolute;
-    z-index: 1;
-    right: 0;
   }
 
   h1 {
-    background-color: transparent;
     padding-top: 1.6rem;
-    position: absolute;
     text-align: left;
     padding-left: 2rem;
     z-index: 1;
@@ -162,6 +159,7 @@ dl {
 
   h2 {
     padding-left: 0;
+    padding-bottom: 4rem;
     left: 2rem;
     text-align: left;
   }
@@ -169,6 +167,15 @@ dl {
   .btn {
     left: 2rem;
     transform: translateX(0);
+  }
+
+  .holiday {
+    color: #fff;
+    text-align: left;
+    bottom: 0;
+    padding: 1rem;
+    padding-left: 2rem;
+    visibility: visible;
   }
 
 }
