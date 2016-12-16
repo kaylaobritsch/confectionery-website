@@ -156,8 +156,8 @@ fieldset {
   background-image: url("../images/chocolate-icon.svg");
   background-position: 10px;
   background-repeat: no-repeat;
-  background-size: 50px;
-  padding: 25px 25px 25px 75px;
+  background-size: 45px;
+  padding-left: 65px;
 }
 
 #name,
@@ -165,6 +165,7 @@ fieldset {
 #favorite,
 #bday {
   color: #6e4035;
+  font-size: .95rem;
 }
 
 #name:focus,
@@ -173,6 +174,14 @@ fieldset {
 #bday:focus {
   border: 3px solid #f51d4e;
   outline: none;
+}
+
+:-moz-ui-invalid:not(output) {
+  box-shadow: none;
+}
+
+label {
+  color: #f51d4e;
 }
 
 footer {
