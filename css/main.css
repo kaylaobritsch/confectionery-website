@@ -1,6 +1,6 @@
 html {
   background-color: #6e4035;
-  font-family: "Open Sans", sans-serif;
+  font-family: sans-serif;
 }
 
 header nav {
@@ -23,6 +23,11 @@ header nav a:hover {
   border-bottom: 6px solid #f51d4e;
 }
 
+header nav a:focus {
+  background-color: #fff;
+  border-bottom: 6px solid #f51d4e;
+}
+
 h1 {
   color: #6e4035;
   background-color: #fff;
@@ -36,7 +41,7 @@ h2 {
   bottom: 0;
   color: #fff;
   font-family: "Gloria Hallelujah", cursive;
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 1rem 1rem 2rem;
   text-align: center;
 }
 
@@ -71,22 +76,30 @@ legend {
   transform: translateX(-50%);
 }
 
-main nav a {
+.btn-shop:hover {
+  color: #fff;
+}
+
+nav a {
+  color: #6e4035;
+}
+
+a:hover {
   color: #f51d4e;
 }
 
-main nav a:hover {
+nav a:focus {
   color: #f51d4e;
 }
 
-main li {
+li {
   background-color: #fff;
 }
 
 #story,
 #shop,
 #blog,
-#order {
+#sign-up {
   background-color: #fff;
 }
 
@@ -115,6 +128,10 @@ main li {
   color: #f51d4e;
 }
 
+#blog a:focus {
+  color: #f51d4e;
+}
+
 fieldset {
   border: none;
 }
@@ -122,7 +139,7 @@ fieldset {
 #name,
 #email {
   background-color: white;
-  background-image: url('../images/chocolate-icon.svg');
+  background-image: url("../images/chocolate-icon.svg");
   background-position: 10px;
   background-repeat: no-repeat;
   background-size: 50px;
@@ -144,6 +161,10 @@ fieldset {
   outline: none;
 }
 
+footer {
+  background-color: #fff;
+}
+
 /* Responsive Banner Cropping
 .banner-img {
   height: 20rem;
@@ -157,17 +178,17 @@ fieldset {
 
 @media only screen and (min-width: 38em) {
 
-  main ul {
+  ul {
     padding-bottom: 2rem;
   }
 
-  main nav li {
+  nav li {
     background-color: transparent;
     padding-left: .25rem;
     padding-right: .25rem;
   }
 
-  main nav {
+  nav {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -186,8 +207,10 @@ fieldset {
     padding-left: .5rem;
     padding-right: .5rem;
   }
+}
 
 @media only screen and (min-width: 60em) {
+
   header nav {
     padding-top: 1rem;
   }
@@ -213,11 +236,10 @@ fieldset {
 
   .holiday {
     color: #fff;
-    text-align: left;
     bottom: 0;
     padding-bottom: 2rem;
     padding-left: 2rem;
+    text-align: left;
     visibility: visible;
   }
-
 }

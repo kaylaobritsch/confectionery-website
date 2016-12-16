@@ -8,19 +8,26 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 </head>
 <body class="wrapper">
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="section#story">Jump to story</a></li>
+    <li><a href="section#shop">Jump to shop</a></li>
+    <li><a href="section#blog">Jump to blog</a></li>
+    <li><a href="section#sign-up">Jump to sign up</a></li>
+  </ul>
 
   <header class="masthead grid relative" role="banner">
     <h1 class="giga unit xs-1 s-1 m-1 l-1-2 zindex-3 push-0">Coco's Chocolatiers</h1>
-    <nav class="unit xs-1 s-1 m-1 l-1-2 zindex-3" id="nav" role="navigation">
+    <nav class="unit xs-1 s-1 m-1 l-1-2 zindex-3 nav" id="nav" role="navigation">
       <ul class="grid list-group text-center">
         <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 push-1-8"><a href="#story">Our Story</a></li>
         <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 push-1-8"><a href="#shop">Favorites</a></li>
         <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 push-1-8"><a href="#blog">Blog</a></li>
-        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 push-1-8"><a href="#order">Order</a></li>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 push-1-8"><a href="#sign-up">Sign Up</a></li>
       </ul>
     </nav>
     <div class="push embed embed-24by10">
@@ -31,161 +38,140 @@
     </div>
   </header>
 
+  <nav>
+    <ul class="list-group">
+      <li class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2 text-center">
+        <div class="grid relative">
+          <a href="#story">
+            <div class="unit xs-1-1 s-1-2 m-1 l-1">
+              <img class="img-flex" src="images/story-section.jpg" alt="">
+            </div>
+            <div class="unit xs-1-1 s-1-2 m-1 l-2-3 gutter-1-8 pad-t pad-b card-text">
+              <p class="push-0 pad-t-1-2 text-upper milli">Story</p>
+              <h3 class="push-0 mega">Beans-to-Bars</h3>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2 text-center">
+        <div class="grid relative">
+          <a href="#blog">
+            <div class="unit xs-1-1 s-1-2 m-1 l-1">
+              <img class="img-flex" src="images/blog-section.jpg" alt="">
+            </div>
+            <div class="unit xs-1-1 s-1-2 m-1 l-2-3 gutter-1-8 pad-t pad-b card-text">
+              <p class="push-0 pad-t-1-2 text-upper milli">Blog</p>
+              <h3 class="push-0 mega">Chocolate Life</h3>
+            </div>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
   <main class="wrapper" role="main" id="main">
-    <nav>
-      <ul class="list-group">
-        <li class="push-1-2 unit xs-1 s-1 m-1-3 l-1-3 text-center">
-          <div class="grid relative">
-            <a href="#story">
-              <div class="unit xs-1-1 s-1-2 m-1 l-1">
-                <img class="img-flex" src="images/story.jpg" alt="">
-              </div>
-              <div class="unit xs-1-1 s-1-2 m-1 l-2-3 gutter-1-8 pad-t pad-b card-text">
-                <p class="push-0 pad-t-1-2 text-upper milli">Story</p>
-                <h3 class="push-0 mega">Beans-to-Bars</h3>
-              </div>
-            </a>
+    <section class="grid story push" id="story">
+      <div class="unit xs-1 s-1 m-1 l-1-2 story-img embed embed-3by1">
+        <img class="img-flex embed-item" src="images/story-section.jpg" alt="" aria-describedat="#beans-to-bars">
+      </div>
+      <div class="unit xs-1 s-1 m-1 l-1-2 gutter-1-2" id="beans-to-bars">
+        <h4 class="tera unit xs-1 s-1 pad-t-1-2 pad-b-1-2 push-0 max-length">Beans-to-Bars</h4>
+        <p class="milli">For over three generations we have been the only company to produce chocolate in Ottawa. Production starts with ethically sourced cocoa beans—we then combine 63% cocoa powder with cocoa butter. Fresh cream is added with sugar to create a rich creamy chocolate crumb. The crumb is added to butter and cocoa liquor to create the perfect chocolate mixture. This chocolate mixture is used to create everything from cake pops to chocolate bars and then sent to your home.</p>
+      </div>
+    </section>
+
+    <section class="grid push gutter-1-2" id="shop">
+      <h4 class="tera unit xs-1 s-1 m-1 l-1 gutter-1-2 pad-t-1-2 pad-b-1-2 push-0">Favorites</h4>
+      <div class="unit xs-1 s-1 m-1-3">
+        <div class="unit xs-1-2 s-1-2 m-1 shop-item push-1-2">
+          <img class="img-flex img-circle" src="images/favorite-1.jpg" alt="" aria-describedat="#coconut-truffles">
+        </div>
+        <div class="unit xs-1-2 s-1-2 m-1 shop-text" id="coconut-truffles">
+          <p class="mega not-bold price push-0">$15</p>
+          <p class="kilo bold push-0 brown">Coconut Truffles</p>
+          <p class="milli">The insides of these truffles are made with gooey coconut filling and smothered in chocolate. Get your coconut fix with this box of 20.</p>
+        </div>
+      </div>
+      <div class="unit xs-1 s-1 m-1-3">
+        <div class="unit xs-1-2 s-1-2 m-1 shop-item push-1-2">
+          <img class="img-flex img-circle" src="images/favorite-2.jpg" alt="" aria-describedat="#noel-chocolate">
+        </div>
+        <div class="unit xs-1-2 s-1-2 m-1 shop-text" id="noel-chocolate">
+          <p class="mega not-bold price push-0">$30</p>
+          <p class="kilo bold push-0 brown">Noël Chocolate Collection</p>
+          <p class="milli">This signature box of chocolates contains 26 holiday flavors—including creamy candy cane, perfect praline and excellent eggnog.</p>
+        </div>
+      </div>
+      <div class="unit xs-1 s-1 m-1-3">
+        <div class="unit xs-1-2 s-1-2 m-1 shop-item push-1-2">
+          <img class="img-flex img-circle" src="images/favorite-3.jpg" alt="" aria-describedat="#cake-pops">
+        </div>
+        <div class="unit xs-1-2 s-1-2 m-1 shop-text" id="cake-pops">
+          <p class="mega not-bold price push-0">$15</p>
+          <p class="kilo bold push-0 brown">Celebration Cake Pops</p>
+          <p class="milli">Each of these cake pops has a delicious brownie center—dipped in white chocolate. Each boxed set comes with 10 cake pops.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid story push" id="blog">
+      <div class="unit xs-1 s-1 m-1 l-1-2 blog-img embed embed-3by1">
+        <img class="img-flex embed-item" src="images/blog-section.jpg" alt="" aria-describedat="#chocolate-life">
+      </div>
+      <div class="unit xs-1 s-1 m-1 l-1-2 gutter-1-2" id="chocolate-life">
+        <h4 class="tera unit xs-1 s-1 pad-t-1-2 pad-b-1-2 push-0 max-length">Chocolate Life</h4>
+        <p class="mega brown push-0">Skin Health</p>
+        <p class="milli push-1-2">Chocolate has also proven that it may be more than just delicious. The bioactive compounds found in dark chocolate may also be great for your skin. Flavonols from the cocoa bean have been proven to improve blood flow to the skin and protect against sun damage.</p>
+        <div class="push">
+          <a class="milli" href="#">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid push" id="sign-up">
+      <form class="push-0 gutter-1-2" method="POST" action="https://formspree.io/obritschk@gmail.com">
+        <fieldset>
+          <legend class="tera unit xs-1 s-1 m-1 l-1 pad-t-1-2 pad-b-1-2 push-0 max-length">Sign Up</legend>
+          <p class="milli unit xs-1 s-1 m-1 l-1">Sign up for our sweet treats reward program. Recieve a suprise gift from us during your birthday month.</p>
+          <div class="grid">
+            <div class="push unit xs-1 s-1 m-1 l-1-2 gutter-1-2">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="push unit xs-1 s-1 m-1 l-1-2 gutter-1-2">
+              <label for="email">Email</label>
+              <input id="email" name="email" placeholder="chocolatelover@gmail.com" required>
+            </div>
+            <div>
+              <input type="hidden" name="_subject" value="Sign Up">
+            </div>
+            <div class="push unit xs-1 s-1 m-1 l-1-2 gutter-1-2">
+              <label for="favorite">Favorite Chocolate</label>
+              <select id="favorite" name="favorite">
+                <option>Plain Old Chocolate Bar</option>
+                <option>Chocolate Cake Pop</option>
+                <option>Assorted Truffles</option>
+                <option>Chocolate Strawberries</option>
+                <option>Chocolate Cookies</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="push unit xs-1 s-1 m-1 l-1-2 gutter-1-2">
+              <label for="bday">Birthday</label>
+              <input id="bday" type="month" name="bday" required>
+            </div>
+            <div class="unit xs-1 text-center">
+              <button class="push-1-2 btn btn-sign" type="submit">Sign Up</button>
+            </div>
           </div>
-        </li>
-        <li class="push-1-2 unit xs-1 s-1 m-1-3 l-1-3 text-center">
-          <div class="grid relative">
-            <a href="#shop">
-              <div class="unit xs-1-1 s-1-2 m-1 l-1">
-                <img class="img-flex" src="images/shop.jpg" alt="">
-              </div>
-              <div class="unit xs-1-1 s-1-2 m-1 l-2-3 gutter-1-8 pad-t pad-b card-text">
-                <p class="push-0 pad-t-1-2 text-upper milli">Shop</p>
-                <h3 class="push-0 mega">Favorites</h3>
-              </div>
-            </a>
-          </div>
-        </li>
-        <li class="push-1-2 unit xs-1 s-1 m-1-3 l-1-3 text-center">
-          <div class="grid relative">
-            <a href="#blog">
-              <div class="unit xs-1-1 s-1-2 m-1 l-1">
-                <img class="img-flex" src="images/blog.jpg" alt="">
-              </div>
-              <div class="unit xs-1-1 s-1-2 m-1 l-2-3 gutter-1-8 pad-t pad-b card-text">
-                <p class="push-0 pad-t-1-2 text-upper milli">Blog</p>
-                <h3 class="push-0 mega">Chocolate Life</h3>
-              </div>
-            </a>
-          </div>
-        </li>
-      </ul>
-    </nav>
+        </fieldset>
+      </form>
+    </section>
   </main>
 
-  <section class="grid story push" id="story">
-    <div class="unit xs-1 s-1 m-1 l-1-2 story-img embed embed-3by1">
-      <img class="img-flex embed-item" src="images/story-section.jpg" alt="">
-    </div>
-    <div class="unit xs-1 s-1 m-1 l-1-2 gutter-1-2">
-      <h4 class="tera unit xs-1 s-1 pad-t-1-2 pad-b-1-2 push-0 max-length">Beans-to-Bars</h4>
-      <p class="milli">For over three generations we have been the only company to produce chocolate in Ottawa. Production starts with ethically sourced cocoa beans—we then combine 63% cocoa powder with cocoa butter. Fresh cream is added with sugar to create a rich creamy chocolate crumb. The crumb is added to butter and cocoa liquor to create the perfect chocolate mixture. This chocolate mixture is used to create everything from cake pops to chocolate bars and then sent to your home.</p>
-    </div>
-  </section>
-
-  <section class="grid xs-1 s-1 push gutter-1-2" id="shop">
-    <h4 class="tera unit xs-1 s-1 m-1 l-1 gutter-1-2 pad-t-1-2 pad-b-1-2 push-0">Favorites</h4>
-    <div class="unit xs-1 s-1 m-1-4">
-      <div class="unit xs-1-2 s-1-2 m-1 shop-item push-1-2">
-        <img class="img-flex img-circle" src="images/favorite-1.jpg" alt="">
-      </div>
-      <div class="unit xs-1-2 s-1-2 m-1 shop-text">
-        <p class="mega not-bold price push-0">$15</p>
-        <p class="kilo bold push-0 brown">Coconut Truffles</p>
-        <p class="milli">The insides of these truffles are made with gooey coconut filling and smothered in chocolate. Get your coconut fix with this box of 20.</p>
-      </div>
-    </div>
-    <div class="unit xs-1 s-1 m-1-4">
-      <div class="unit xs-1-2 s-1-2 m-1 shop-item push-1-2">
-        <img class="img-flex img-circle" src="images/favorite-2.jpg" alt="">
-      </div>
-      <div class="unit xs-1-2 s-1-2 m-1 shop-text">
-        <p class="mega not-bold price push-0">$30</p>
-        <p class="kilo bold push-0 brown">Noël Chocolate Collection</p>
-        <p class="milli">This signature box of chocolates contains 26 holiday flavors—including creamy candy cane, perfect praline and excellent eggnog.</p>
-      </div>
-    </div>
-    <div class="unit xs-1 s-1 m-1-4">
-      <div class="unit xs-1-2 s-1-2 m-1 shop-item push-1-2">
-        <img class="img-flex img-circle" src="images/favorite-3.jpg" alt="">
-      </div>
-      <div class="unit xs-1-2 s-1-2 m-1 shop-text">
-        <p class="mega not-bold price push-0">$25</p>
-        <p class="kilo bold push-0 brown">Chocolate Mousse Truffle</p>
-        <p class="milli">These light airy mousse truffles come in an assorted box of 26. Made with white or dark chocolate.</p>
-      </div>
-    </div>
-    <div class="unit xs-1 s-1 m-1-4">
-      <div class="unit xs-1-2 s-1-2 m-1 shop-item push-1-2">
-        <img class="img-flex img-circle" src="images/favorite-4.jpg" alt="">
-      </div>
-      <div class="unit xs-1-2 s-1-2 m-1 shop-text">
-        <p class="mega not-bold price push-0">$15</p>
-        <p class="kilo bold push-0 brown">Celebration Cake Pops</p>
-        <p class="milli">Each of these cake pops has a delicious brownie center—dipped in white chocolate. Each boxed set comes with 10 cake pops.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="grid story push" id="blog">
-    <div class="unit xs-1 s-1 m-1 l-1-2 blog-img embed embed-3by1">
-      <img class="img-flex embed-item" src="images/blog-section.jpg" alt="">
-    </div>
-    <div class="unit xs-1 s-1 m-1 l-1-2 gutter-1-2">
-      <h4 class="tera unit xs-1 s-1 pad-t-1-2 pad-b-1-2 push-0 max-length">Chocolate Life</h4>
-      <p class="mega brown push-0">Skin Health</p>
-      <p class="milli push-1-2">Chocolate has also proven that it may be more than just delicious. The bioactive compounds found in dark chocolate may also be great for your skin. Flavonols from the cocoa bean have been proven to improve blood flow to the skin and protect against sun damage.</p>
-      <div class="push">
-        <a class="milli" href="#">Read More</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="grid push" id="order">
-    <form class="push-0 gutter-1-2" method="POST" action="https://formspree.io/obritschk@gmail.com">
-      <fieldset>
-      <legend class="tera unit xs-1 s-1 m-1 l-1 pad-t-1-2 pad-b-1-2 push-0 max-length">Sign Up</legend>
-      <p class="milli unit xs-1 s-1 m-1 l-1">Sign up for our sweet treats reward program. Recieve a suprise gift from us during your birthday month.</p>
-      <div class="grid">
-        <div class="push unit xs-1 s-1 m-1 l-1-2 gutter-1-2">
-          <label for="name">Full Name</label>
-          <input id="name" name="name" placeholder="Your Name" required>
-        </div>
-        <div class="push unit xs-1 s-1 m-1 l-1-2 gutter-1-2">
-          <label for="email">Email</label>
-          <input id="email" name="email" placeholder="chocolatelover@gmail.com" required>
-        </div>
-        <div>
-          <input type="hidden" name="_subject" value="Sign Up">
-        </div>
-        <div class="push unit xs-1 s-1 m-1 l-1-2 gutter-1-2">
-          <label for="favorite">Favorite Chocolate</label>
-          <select id="favorite" name="favorite">
-            <option>Plain Old Chocolate Bar</option>
-            <option>Chocolate Cake Pop</option>
-            <option>Assorted Truffles</option>
-            <option>Chocolate Strawberries</option>
-            <option>Chocolate Cookies</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="push unit xs-1 s-1 m-1 l-1-2 gutter-1-2">
-          <label for="birthday">Birthday</label>
-          <input id="bday" type="month" name="bday" required>
-        </div>
-        <div class="unit xs-1 text-center">
-          <button class="push-1-2 btn btn-sign" type="submit">Sign Up</button>
-        </div>
-      </fieldset>
-    </form>
-  </section>
-
-  <footer>
-    <p>©Kayla Obritsch 2016</p>
+  <footer class="footer grid" role="contentinfo">
+    <small class="unit xs-1 s-1 gutter-1-2">© Coco's Chocolatiers 2016</small>
   </footer>
+
 </body>
 </html>
