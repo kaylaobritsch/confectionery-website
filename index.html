@@ -27,7 +27,7 @@
       <img class="banner-img embed-item" src="images/banner.jpg" alt="">
       <h2 class="peta unit absolute push-2 max-length">Noël Chocolates</h2>
       <p class="unit absolute push-2 holiday max-length">These chocolates don't care if you've been naughty or nice. Treat yourself to some of our holiday classics.</p>
-      <a class="unit absolute btn push" href="#shop">Shop Now</a>
+      <a class="unit absolute btn btn-shop push" href="#shop">Shop Now</a>
     </div>
   </header>
 
@@ -53,7 +53,7 @@
               <div class="unit xs-1-1 s-1-2 m-1 l-1">
                 <img class="img-flex" src="images/shop.jpg" alt="">
               </div>
-              <div class="unit xs-1-1 s-1-2 m-1 l-2-3 gutter-1-8 pad-t pad-b card-text card-text">
+              <div class="unit xs-1-1 s-1-2 m-1 l-2-3 gutter-1-8 pad-t pad-b card-text">
                 <p class="push-0 pad-t-1-2 text-upper milli">Shop</p>
                 <h3 class="push-0 mega">Favorites</h3>
               </div>
@@ -66,7 +66,7 @@
               <div class="unit xs-1-1 s-1-2 m-1 l-1">
                 <img class="img-flex" src="images/blog.jpg" alt="">
               </div>
-              <div class="unit xs-1-1 s-1-2 m-1 l-2-3 gutter-1-8 pad-t pad-b card-text card-text">
+              <div class="unit xs-1-1 s-1-2 m-1 l-2-3 gutter-1-8 pad-t pad-b card-text">
                 <p class="push-0 pad-t-1-2 text-upper milli">Blog</p>
                 <h3 class="push-0 mega">Chocolate Life</h3>
               </div>
@@ -139,46 +139,46 @@
       <h4 class="tera unit xs-1 s-1 pad-t-1-2 pad-b-1-2 push-0 max-length">Chocolate Life</h4>
       <p class="mega brown push-0">Skin Health</p>
       <p class="milli push-1-2">Chocolate has also proven that it may be more than just delicious. The bioactive compounds found in dark chocolate may also be great for your skin. Flavonols from the cocoa bean have been proven to improve blood flow to the skin and protect against sun damage.</p>
-      <a class="milli" href="#">Read More</a>
+      <div class="push">
+        <a class="milli" href="#">Read More</a>
+      </div>
     </div>
   </section>
 
   <section class="grid push" id="order">
     <form class="push-0 gutter-1-2" method="POST" action="https://formspree.io/obritschk@gmail.com">
       <fieldset>
-      <legend class="tera unit xs-1 s-1 m-1 l-1 pad-t-1-2 pad-b-1-2 push-0 max-length">Place an Order</legend>
+      <legend class="tera unit xs-1 s-1 m-1 l-1 pad-t-1-2 pad-b-1-2 push-0 max-length">Sign Up</legend>
+      <p class="milli unit xs-1 s-1 m-1 l-1">Sign up for our sweet treats reward program. Recieve a suprise gift from us during your birthday month.</p>
       <div class="grid">
-        <div class="push unit xs-1 s-1 m-1 l-1-2 name">
-          <label for="name">Name</label>
-          <input id="name" name="name">
+        <div class="push unit xs-1 s-1 m-1 l-1-2 gutter-1-2">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" placeholder="Your Name" required>
         </div>
-        <div class="push unit xs-1 s-1 m-1 l-1-2 email">
+        <div class="push unit xs-1 s-1 m-1 l-1-2 gutter-1-2">
           <label for="email">Email</label>
-          <input id="email" name="email">
+          <input id="email" name="email" placeholder="chocolatelover@gmail.com" required>
         </div>
         <div>
-          <input type="hidden" name="_subject" value="Order placed">
+          <input type="hidden" name="_subject" value="Sign Up">
         </div>
-        <div class="push unit xs-1 s-1 m-1 l-1-2 favorite">
-          <label for="fitness">Favorite Chocolates</label>
-          <select id="fitness" name="fitness">
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-            <option>Option 4</option>
+        <div class="push unit xs-1 s-1 m-1 l-1-2 gutter-1-2">
+          <label for="favorite">Favorite Chocolate</label>
+          <select id="favorite" name="favorite">
+            <option>Plain Old Chocolate Bar</option>
+            <option>Chocolate Cake Pop</option>
+            <option>Assorted Truffles</option>
+            <option>Chocolate Strawberries</option>
+            <option>Chocolate Cookies</option>
+            <option>Other</option>
           </select>
         </div>
-        <div class="push unit xs-1 s-1 m-1 l-1-2 quanitity">
-          <label for="fitness">Quantity</label>
-          <select id="fitness" name="fitness">
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-            <option>Option 4</option>
-          </select>
+        <div class="push unit xs-1 s-1 m-1 l-1-2 gutter-1-2">
+          <label for="birthday">Birthday</label>
+          <input id="bday" type="month" name="bday" required>
         </div>
         <div class="unit xs-1 text-center">
-          <button class="push-1-2 btn" type="submit">Place your Order</button>
+          <button class="push-1-2 btn btn-sign" type="submit">Sign Up</button>
         </div>
       </fieldset>
     </form>

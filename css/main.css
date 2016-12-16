@@ -33,11 +33,11 @@ h1 {
 }
 
 h2 {
+  bottom: 0;
   color: #fff;
   font-family: "Gloria Hallelujah", cursive;
+  padding: 1rem 1rem 2rem 1rem;
   text-align: center;
-  bottom: 0;
-  padding: 1rem;
 }
 
 h3 {
@@ -50,37 +50,37 @@ legend {
   font-family: "Gloria Hallelujah", cursive;
 }
 
-.brown {
-  color: #6e4035;
-}
-
 .holiday {
   visibility: hidden;
 }
 
 .btn {
-  border-color: #f51d4e;
   background-color: #f51d4e;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  border-color: #f51d4e;
 }
 
 .btn:hover {
   background-color: rgba(255, 255, 255, .5);
   border-color: #f51d4e;
+  color: #f51d4e;
+}
+
+.btn-shop {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 main nav a {
-  color: #6e4035;
-}
-
-main li {
-  background-color: #fff;
+  color: #f51d4e;
 }
 
 main nav a:hover {
   color: #f51d4e;
+}
+
+main li {
+  background-color: #fff;
 }
 
 #story,
@@ -90,32 +90,61 @@ main nav a:hover {
   background-color: #fff;
 }
 
-.shop-text {
-  padding-left: .5rem;
-}
-
-fieldset {
-  border: none;
-}
-
 .img-circle {
   border-radius: 50%;
+}
+
+.shop-text {
+  padding-left: .5rem;
 }
 
 .price {
   color: #f51d4e;
 }
 
-#blog a {
-  text-decoration: none;
+.brown {
   color: #6e4035;
+}
+
+#blog a {
+  color: #6e4035;
+  text-decoration: none;
 }
 
 #blog a:hover {
   color: #f51d4e;
 }
 
-/* Might need this?
+fieldset {
+  border: none;
+}
+
+#name,
+#email {
+  background-color: white;
+  background-image: url('../images/chocolate-icon.svg');
+  background-position: 10px;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  padding: 25px 25px 25px 75px;
+}
+
+#name,
+#email,
+#favorite,
+#bday {
+  color: #6e4035;
+}
+
+#name:focus,
+#email:focus,
+#favorite:focus,
+#bday:focus {
+  border: 3px solid #f51d4e;
+  outline: none;
+}
+
+/* Responsive Banner Cropping
 .banner-img {
   height: 20rem;
   width: 100%;
@@ -125,9 +154,6 @@ fieldset {
   overflow: hidden;
 }
 */
-
-@media only screen and (min-width: 25em) {
-}
 
 @media only screen and (min-width: 38em) {
 
@@ -141,12 +167,17 @@ fieldset {
     padding-right: .25rem;
   }
 
+  main nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .card-text {
     background: #fff;
-    padding-bottom: 2rem;
-    position: absolute;
     bottom: -40px;
     left: 50%;
+    padding-bottom: 2rem;
+    position: absolute;
     transform: translateX(-50%);
   }
 
@@ -154,11 +185,6 @@ fieldset {
   .shop-item {
     padding-left: .5rem;
     padding-right: .5rem;
-  }
-
-  main nav {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
 @media only screen and (min-width: 60em) {
@@ -194,7 +220,4 @@ fieldset {
     visibility: visible;
   }
 
-}
-
-@media only screen and (min-width: 90em) {
 }
