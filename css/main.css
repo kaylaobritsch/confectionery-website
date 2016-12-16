@@ -50,7 +50,7 @@ legend {
   font-family: "Gloria Hallelujah", cursive;
 }
 
-h5 {
+.brown {
   color: #6e4035;
 }
 
@@ -69,7 +69,6 @@ h5 {
 .btn:hover {
   background-color: rgba(255, 255, 255, .5);
   border-color: #f51d4e;
-  color: #f51d4e;
 }
 
 main nav a {
@@ -107,7 +106,14 @@ fieldset {
   color: #f51d4e;
 }
 
+#blog a {
+  text-decoration: none;
+  color: #6e4035;
+}
 
+#blog a:hover {
+  color: #f51d4e;
+}
 
 /* Might need this?
 .banner-img {
